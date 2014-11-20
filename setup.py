@@ -2,9 +2,6 @@ from distutils.core import setup, Extension
 
 memzipimport = Extension("memzipimport",
                        sources=["memzipimport.c"],
-                       extra_compile_args=["/W4", # Highest warning level
-                                           "/Zi",  # Generate PDBs
-                                          ],
                       )
 
 setup(name="memzipimport",
